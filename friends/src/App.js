@@ -17,11 +17,11 @@ function App() {
     <div className="App">
 
       <Link className='link' to='/login'>Login</Link>
-      <Link className='link' to='/protected'>Friends List</Link>
-      <Link className='link' to='/protected2'>Add Friend</Link>
+      <Link className='link' to='/friends'>Friends List</Link>
+      <Link className='link' to='/addfriend'>Add Friend</Link>
       <Switch>
-        <PrivateRoute exact path='/protected' component={FriendsList}/>
-        <PrivateRoute exact path='/protected2' component={AddFriendForm}/>
+        <PrivateRoute exact path='/friends' component={FriendsList}/>
+        <PrivateRoute exact path='/addfriend' component={AddFriendForm}/>
         
         <Route path='/login' component={Login}/>
       </Switch>

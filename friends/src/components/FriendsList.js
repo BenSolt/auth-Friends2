@@ -36,15 +36,16 @@ return (
         {friend.map(f => {
             return(
                 <div className='card'>
+                <div className='deleteholder'>
+                <span className="deleteBtn" onClick={e => {
+                    e.stopPropagation();
+                    deleteFriend(f) 
+                  }}>X</span>
+                </div>
                   <h2>NAME:</h2><h3>{f.name}</h3>
                   <h2>AGE:</h2><h3> {f.age}</h3>
                   <h2>EMAIL:</h2><h3> {f.email}</h3>
-                  <span className="delete" onClick={e => {
-                    e.stopPropagation();
-                    deleteFriend(f)
-                    
-                  }
-                }>X</span>
+                 
                 </div>
             )
         })}
