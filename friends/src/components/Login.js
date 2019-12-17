@@ -33,21 +33,26 @@ login = e => {
 render() {
     return (
         <div>
-            <form onSubmit={this.login}>
+            <h1>LOGIN</h1>
+            <div className='formholder'>
+            <form className='form' onSubmit={this.login}>
                 <input
+                className='input'
                 type='text'
                 name='username'
                 value={this.state.credentials.username}
                 onChange={this.handleChange}
                 />
                 <input
+                className='input'
                 type='password'
                 name='password'
                 value={this.state.credentials.password}
                 onChange={this.handleChange}
                 />
-                <button>Log In</button>
+                <button className='btn'>LOG IN </button>
             </form>
+            </div>
         </div>
         )
     }

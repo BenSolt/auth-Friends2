@@ -24,16 +24,17 @@ if(friend === []) {
 return (
     <div>
         <h1>Friends List</h1>
-
+        <div className='cardholder'>
         {friend.map(f => {
             return(
-                <div>
-                    <h3>{f.name}</h3>
-                    <h3>{f.age}</h3>
-                    <h3>{f.email}</h3>
+                <div className='card'>
+                  <h2>NAME:</h2><h3>{f.name}</h3>
+                  <h2>AGE:</h2><h3> {f.age}</h3>
+                  <h2>EMAIL:</h2><h3> {f.email}</h3>
                 </div>
             )
         })}
+         </div>
     </div>
   )
 }

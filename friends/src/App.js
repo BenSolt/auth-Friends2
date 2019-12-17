@@ -16,9 +16,9 @@ function App() {
     <Router>
     <div className="App">
 
-      <Link to='/login'>Login</Link>
-      <Link to='/protected'>Friends List</Link>
-      <Link to='/protected2'>Add Friend</Link>
+      <Link className='link' to='/login'>Login</Link>
+      <Link className='link' to='/protected'>Friends List</Link>
+      <Link className='link' to='/protected2'>Add Friend</Link>
       <Switch>
         <PrivateRoute exact path='/protected' component={FriendsList}/>
         <PrivateRoute exact path='/protected2' component={AddFriendForm}/>

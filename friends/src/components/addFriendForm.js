@@ -35,8 +35,11 @@ addaFriend = e => {
 render() {
     return (
         <div>
-            <form onSubmit={this.addaFriend}>
+            <h1>Add a Friend</h1>
+            <div className='formholder'>
+            <form className='form' onSubmit={this.addaFriend}>
                 <input
+                className='input'
                 type='text'
                 placeholder='add friends name'
                 name='name'
@@ -44,6 +47,7 @@ render() {
                 onChange={this.handleChange}
                 />
                 <input
+                className='input'
                 type='text'
                 placeholder='add friends age'
                 name='age'
@@ -51,14 +55,16 @@ render() {
                 onChange={this.handleChange}
                 />
                  <input
+                 className='input'
                 type='text'
                 placeholder='add friends email'
                 name='email'
                 value={this.state.credentials.email}
                 onChange={this.handleChange}
                 />
-                <button>add Friend</button>
+                <button className='btn'>ADD FRIEND</button>
             </form>
+            </div>
         </div>
         )
     }

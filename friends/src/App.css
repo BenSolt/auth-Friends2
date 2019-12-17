@@ -1,8 +1,77 @@
 .App {
+  margin-top: 2%;
   text-align: center;
 }
 
-.App-logo {
+.cardholder{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.card{
+  width: 300px;
+  background: rgb(0, 159, 212);
+  /* background: rgb(255, 174, 0); */
+  margin: 1%;
+  border: 4px solid black;
+}
+
+.link{
+  padding: 12px;
+  color: white;
+  font-size: 1.2rem;
+  background: rgb(0, 131, 175);
+  border: 2px solid black;
+  text-decoration: none;
+  margin: 1%;
+}
+
+.link:hover{
+  padding: 12px;
+  color: black;
+  font-size: 1.2rem;
+  background: rgb(0, 191, 255);
+  border: 2px solid black;
+  text-decoration: none;
+  margin: 1%;
+}
+
+.btn{
+  padding: 5px;
+  font-size: 1.2rem;
+  color: white;
+  background: rgb(0, 131, 175);
+}
+
+.btn:hover{
+  padding: 5px;
+  font-size: 1.2rem;
+  color: black;
+  background: rgb(0, 191, 255);
+}
+
+
+
+.formholder{
+  display: flex;
+  justify-content: center;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.input{
+  padding: 7px;
+  margin: 7px;
+}
+
+
+
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +104,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
