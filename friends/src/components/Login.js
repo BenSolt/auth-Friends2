@@ -21,7 +21,27 @@ handleChange = e => {
 
 login = e => {
     e.preventDefault();
-    
+    axiosWithAuth()
+    .post('/login', this.state.credentials)
+    .then (res => {
+        localStorage.setItem('token', res.data.payload)
+        this.props.history.push('/protected');
+    })
+    .catch(err => console.log(err))
 }
+
+render() {
+    return (
+        <div>
+        <form onSubmit={this.login}>
+        
+        
+        </form>
+        </div>
+    
+    )
+}
+
+
 
 }
