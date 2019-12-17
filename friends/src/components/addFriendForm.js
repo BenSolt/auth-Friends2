@@ -1,3 +1,7 @@
+import React, {useState} from 'react';
+import axiosWithAuth from '../utils/axiosWithAuth';
+
+
 class addFriend extends React.Component {
     state = {
         credentials: {
@@ -22,7 +26,7 @@ addaFriend = e => {
     axiosWithAuth()
     .post('/friends', this.state.credentials)
     .then (res => {
-        localStorage.setItem('token', res.data.payload)
+        // localStorage.setItem('token', res.data.payload)
         this.props.history.push('/protected');
     })
     .catch(err => console.log(err))
